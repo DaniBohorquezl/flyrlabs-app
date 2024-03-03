@@ -1,0 +1,34 @@
+@import '../../variables'
+
+.offcanvas
+ width: 100vw
+ height: 100vh 
+ background-color: $color-white
+ position: fixed
+ top: 0
+ left: -100vw
+ z-index: 1
+ overflow-x: hidden
+ transition: left 0.5s ease
+ &.open
+  left: 0
+ &__header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 20px
+ &__body
+  padding: 20px
+ &__link
+  border-bottom: 1px solid $color-bluegrayx
+  padding: 15px 0
+  font-size: 20px
+
+.offcanvas .submenu 
+ z-index: 2
+ &.open 
+  left: 0
+ &__submenu
+  padding: 15px 0 30px
+  font-size: 16px
+  

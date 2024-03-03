@@ -26,6 +26,7 @@ a
 
 ul
  list-style: none
+ padding: 0
  li
   margin: 10px 0
 
@@ -106,7 +107,7 @@ h2
  line-height: 1.2
 
 h3
- font-size: 14px
+ font-size: 18px
  line-height: 1.25
  font-weight: 600
 
@@ -140,4 +141,14 @@ footer
 
 .container-large
  max-width: 1200px
+
+/* VISIBILITY */
+
+@media (min-width: $layout-breakpoint-small)
+ .visible-s
+  display: none!important
+
+@media (max-width: $layout-breakpoint-small)
+ .hidden-s
+  display: none!important
 

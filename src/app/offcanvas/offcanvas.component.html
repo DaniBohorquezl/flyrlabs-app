@@ -1,0 +1,35 @@
+<div class="offcanvas" [class.open]="isMenuOpen">
+  <div class="offcanvas__header">
+   <a href="#" class="offcanvas__header--close" (click)="toggleMenu()"><img class="offcanvas__header--close" src="../../assets/icons/icon-close.svg" alt="Close"></a>
+   <a href="#"><img class="offcanvas__header--imagen" src="../../assets/images/logo-airline.svg" alt="Logo airline to the people"></a>
+   <a href="#"><img class="offcanvas__header--lenguage" src="../../assets/icons/icon-lenguage.svg" alt="Lenguage"></a>
+  </div>
+  <div class="offcanvas__body">
+   <ul>
+     <li class="offcanvas__link"><a href="#">Check-in</a></li>
+     <li class="offcanvas__link"><a href="#">Manage my booking</a></li>
+     <li class="offcanvas__link"><a href="#" (click)="openSubmenu()">Information</a></li>
+  </ul>
+  </div>
+</div>
+
+<!-- SUBMENU -->
+
+<div class="offcanvas submenu" [class.open]="isSubmenuOpen">
+  <div class="offcanvas__header">
+    <a href="#" class="offcanvas__header--close" (click)="openSubmenu()"><img class="offcanvas__header--close" src="../../assets/icons/icon-close.svg" alt="Close"></a>
+    <a href="#"><img class="offcanvas__header--imagen" src="../../assets/images/logo-airline.svg" alt="Logo airline to the people"></a>
+    <a href="#"><img class="offcanvas__header--lenguage" src="../../assets/icons/icon-lenguage.svg" alt="Lenguage"></a>
+   </div>
+   <div class="offcanvas__body">
+    <h3 class="offcanvas__body--title">Information</h3>
+      <ul>
+      <li class="offcanvas__submenu"><a href="#">Help center</a></li>
+      <li class="offcanvas__submenu"><a href="#">Flight state</a></li>
+      <li class="offcanvas__submenu"><a href="#">Airplanes</a></li>
+      <li class="offcanvas__submenu"><a href="#">Routes</a></li>
+     </ul>
+   </div>
+</div>
+
+<a href="#" class="" (click)="toggleMenu()"><img src="../../assets/icons/icon-mobile-menu.svg" alt="Mobile Menu"></a>

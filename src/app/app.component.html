@@ -1,7 +1,7 @@
 <div>
   <app-navbar></app-navbar>
 </div>
-
+<main>
 <section>
   <div class="hero">
     <div class="hero__content container-small">
@@ -13,7 +13,8 @@
 </section>
 
 <section>
-  <h2>Offers</h2>
+  <div class="container">
+  <h2 class="text-primary">Offers</h2>
   <div class="offers">
     <a class="offers__card" href="#">
       <img class="offers__card--image" src="../assets/images/chicago.jpg" alt="Chicago">
@@ -31,10 +32,11 @@
       <p>From $600.00</p>
     </a>
   </div>
+</div>
 </section>
 
 <section>
-  <div class="promo">
+  <div class="promo container">
    <div class="promo__content">
       <img class="promo__content--imagen" src="../assets/images/discover-the-world.jpg" alt="Discover the word">
     <div class="promo__text container-small">
@@ -44,5 +46,5 @@
    </div>
   </div>
 </section>
-
+</main>
 <app-footer></app-footer>

@@ -13,6 +13,7 @@ body
 
 section
  color: $color-white
+ padding: 20px 0
  
 
 article, header, section, main, footer 
@@ -44,6 +45,7 @@ a:hover
   padding: 15px
   border: none
   border-radius: 100px
+  margin-top: 15px
 
 /*FONT SIZE*/
 
@@ -91,6 +93,9 @@ a:hover
 .text-bluelight
  color: $color-bluelight
 
+.text-primary
+ color: $color-primary
+
 /* HEADINGS */
 
 h1, h2, h3, h4, h5, h6
@@ -98,12 +103,12 @@ h1, h2, h3, h4, h5, h6
  margin: 15px 0
 
 h1
- font-size: 58px
+ font-size: 48px
  line-height: 1.1
  font-weight: 700
 
 h2
- font-size: 28px
+ font-size: 23px
  line-height: 1.2
 
 h3
@@ -124,7 +129,38 @@ h6
  line-height: 2
  font-weight: 500
 
+@media (min-width: $layout-breakpoint-small)
+ h1
+  font-size: 58px
+  line-height: 1.1
+  font-weight: 700
 
+ h2
+  font-size: 28px
+  line-height: 1.2
+
+ h3
+  font-size: 18px
+  line-height: 1.25
+  font-weight: 600
+
+ h4
+  font-size: 14px
+  line-height: 1.25
+
+ h5
+  font-size: 12px
+  line-height: 1.5
+
+ h6
+  font-size: 9px
+  line-height: 2
+  font-weight: 500
+
+.container
+  max-width: 1250px
+  padding: 0 20px
+  margin: 0 auto
  
 
 footer

@@ -1,21 +1,54 @@
 @import '../../variables'
  
 .navbar
- display: flex
- align-items: center
+ @include flex-center
  justify-content: space-between
  height: 80px
  background-color: $color-white
- .logo--navbar
-  width: 155px
- .navbar__menu
-  display: flex
-  align-items: center
-  .navbar__link
-   padding: 0 1rem
+ &__logo
+  &--image
+   width: 155px
+ &__menu
+  @include flex-center
+  gap: 20px
+  flex: 80%
+  margin-left: 64px
+ &__lenguage
+  &--link
+   @include flex-center
+   gap: 5px
 
+.dropdown
+ padding: 20px 0
+ &:hover &__container
+  display: block
+ &__container
+  display: none
+  position: absolute
+  background-color: $color-white
+  min-width: 200px
+  padding: 15px 30px
+  box-shadow: 0px 0px 20px 0px $color-bluegrayx
+  border-radius: 16px
+  margin-top: 20px
+  &:before
+   content:''
+   position: absolute
+   width: 0
+   height: 0
+   top: -8px  
+   border-left: 8px solid transparent
+   border-right: 8px solid transparent 
+   border-bottom: 8px solid $color-white
+   
+@media (max-width: $layout-breakpoint-small)
+ .navbar
+  height: 50px
+  &__logo
+   &--image
+    width: 100px
 
-
-
-  
-  
+@media (max-width: $layout-breakpoint-medium)
+   .navbar
+    &__menu
+     margin-left: 32px

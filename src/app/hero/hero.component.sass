@@ -1,0 +1,21 @@
+@import '../../variables'
+
+.hero
+ @include flex-center
+ background-image: url("../../assets/images/take-a-rest.jpg")
+ background-position: center
+ background-size: cover
+ height: 448px
+ margin-top: -15px
+ padding: 0 15px
+ &__content
+  padding: 30px 0
+  &--lead
+   font-size: 14px
+
+@media (min-width: $layout-breakpoint-small)
+ .hero
+  padding: 0 40px
+  &__content
+   &--lead
+    font-size: 20px

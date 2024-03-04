@@ -1,50 +1,15 @@
-<div>
-  <app-navbar></app-navbar>
-</div>
-<main>
-<section>
-  <div class="hero">
-    <div class="hero__content container-small">
-      <h1>Take a rest</h1>
-      <p class="conntent--lead">Discover all the offers available at the best prices for the whole country and the world</p>
-      <button class="button-primary">Buy</button>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-  <h2 class="text-primary">Offers</h2>
-  <div class="offers">
-    <a class="offers__card" href="#">
-      <img class="offers__card--image" src="../assets/images/chicago.jpg" alt="Chicago">
-      <h2>Chicago</h2>
-      <p>From $600.00</p>
-    </a>
-    <a class="offers__card offers--medium" href="#">
-      <img class="offers__card--image" src="../assets/images/porto.jpg" alt="Porto">
-      <h2>Porto</h2>
-      <p>From $600.00</p>
-    </a>
-    <a class="offers__card" href="#">
-      <img class="offers__card--image" src="../assets/images/chicago-2.jpg" alt="Chicago">
-      <h2>Chicago</h2>
-      <p>From $600.00</p>
-    </a>
-  </div>
-</div>
-</section>
-
-<section>
-  <div class="promo container">
-   <div class="promo__content">
-      <img class="promo__content--imagen" src="../assets/images/discover-the-world.jpg" alt="Discover the word">
-    <div class="promo__text container-small">
-      <h2 class="text-xlarge">Our destinations <span class="promo__text--title text-bluelight weight-regular">Discover the world</span></h2>
-      <p class="text-medium">Embark on an unforgettable adventure! Discover and enjoy our fascinating destinations. We are waiting for you to explore the world together!</p>
-    </div>
-   </div>
-  </div>
-</section>
-</main>
-<app-footer></app-footer>
+<app-navbar></app-navbar>
+  <main>
+  <section>
+    <app-hero></app-hero>
+  </section>
+  <section>
+    <app-offers></app-offers>
+  </section>
+  <section>
+    <app-promo-banner></app-promo-banner>
+  </section>
+  </main>
+<footer>
+  <app-footer></app-footer>
+</footer>

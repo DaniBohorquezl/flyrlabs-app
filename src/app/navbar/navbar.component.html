@@ -1,14 +1,28 @@
 <nav class="navbar container">
   <app-offcanvas class="visible-s"></app-offcanvas>
    <div class="navbar__logo">
-     <a href="#home"><img class="logo--navbar" src="../../assets/images/logo-airline.svg" alt="Logo airline to the people"></a>
+     <a href="#home"><img class="navbar__logo--image" src="/assets/images/logo-airline.svg" alt="Logo airline to the people"></a>
    </div>
    <ul class="navbar__menu hidden-s">
-    <li><a class="navbar__link" href="#">Check-in</a></li>
-    <li><a class="navbar__link" href="#">Manage my booking</a></li>
-    <li><a class="navbar__link" href="#">Information</a></li>
+    <li class="navbar__menu--item"><a class="navbar__menu--link" href="#">Check-in</a></li>
+    <li class="navbar__menu--item"><a class="navbar__menu--link" href="#">Manage my booking</a></li>
+    <li class="navbar__menu--item dropdown"><a class="navbar__menu--link" href="#">Information</a>
+      <div class="dropdown__container">
+        <ul>
+        <li><a href="">Help center</a></li>
+        <li><a href="">Flight state</a></li>
+        <li><a href="">Airplanes</a></li>
+        <li><a href="">Routes</a></li>
+      </ul>
+      </div>
+    </li>    
    </ul>
    <ul class="navbar__lenguage">
-    <li><a class="navbar__link" href="#"><img class="link--icon" src="../../assets/icons/icon-lenguage.svg" alt="Icon lenguage"><span class="hidden-s"> English</span></a></li>
+    <li class="navbar__item">
+      <a class="navbar__lenguage--link" href="#">
+        <img class="navbar__item--icon" src="/assets/icons/icon-lenguage.svg" alt="Icon lenguage">
+        <span class="hidden-s"> English</span>
+      </a>
+    </li>
    </ul>
 </nav>

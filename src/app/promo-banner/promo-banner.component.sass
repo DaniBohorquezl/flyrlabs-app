@@ -1,0 +1,35 @@
+@import '../../variables'
+
+.promo
+ margin-bottom: 40px
+ &__content
+  @include flex-center
+  flex-direction: column
+  background: $gradient-bluegray180
+  border-radius: 16px
+  min-height: 720px
+  overflow: hidden
+  padding: 20px
+  &--imagen
+   width: 700px
+   height: 700px
+   object-position: -50% 50%
+   border-radius: 50%
+   object-fit: cover
+   margin: -300px 0 40px 0
+ &__text
+  &--title
+   display: block
+   margin-bottom: 30px
+
+@media (min-width: $layout-breakpoint-small)
+ .promo
+  &__content
+   flex-direction: row
+   background: $gradient-bluegray
+   border-radius: 16px
+   min-height: 385px
+   height: 385px
+   &--imagen
+    object-position: -50% 80%
+    margin: 0 80px 0 -200px

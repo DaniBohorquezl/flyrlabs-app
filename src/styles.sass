@@ -4,18 +4,20 @@ html
  letter-spacing: 0.3px
  font-size: 14px
  line-height: 1.3
- font-family: $font-stack
+ font-family: $font-roboto
  font-weight: 400
 
-body 
+body
  touch-action: manipulation
  margin: 0px
 
+main
+ background-color: $color-graylight
+
 section
  color: $color-white
- padding: 20px 0
+ padding: 15px 0
  
-
 article, header, section, main, footer 
  display: block
 
@@ -39,10 +41,10 @@ a:hover
 .button-primary
   background-color: $color-tertiary
   color: $color-white
-  min-width: 150px
+  min-width: 170px
   font-size: 16px
   font-weight: 600
-  padding: 15px
+  padding: 12px 15px
   border: none
   border-radius: 100px
   margin-top: 15px
@@ -59,17 +61,11 @@ a:hover
  font-size: 18px
 
 .text-small
- font-size: 12px
+ font-size: 10px
 
 @media (min-width: $layout-breakpoint-small)
  .text-xlarge 
   font-size: 40px
-
- .text-large 
-  font-size: 30px
-
- .text-medium
-  font-size: 18px
 
  .text-small
   font-size: 12px
@@ -103,7 +99,7 @@ h1, h2, h3, h4, h5, h6
  margin: 15px 0
 
 h1
- font-size: 48px
+ font-size: 32px
  line-height: 1.1
  font-weight: 700
 
@@ -127,7 +123,7 @@ h5
 h6
  font-size: 9px
  line-height: 2
- font-weight: 500
+ font-weight: 600
 
 @media (min-width: $layout-breakpoint-small)
  h1
@@ -144,38 +140,32 @@ h6
   line-height: 1.25
   font-weight: 600
 
- h4
-  font-size: 14px
-  line-height: 1.25
-
- h5
-  font-size: 12px
-  line-height: 1.5
-
- h6
-  font-size: 9px
-  line-height: 2
-  font-weight: 500
-
-.container
-  max-width: 1250px
-  padding: 0 20px
-  margin: 0 auto
- 
-
-footer
- padding: 40px 0
- background: $color-bluegray
-
 /*CONTAINERS*/
 
-.container-small
+.container
+ max-width: 1250px
+ padding: 0 20px
+ margin: 0 auto
+ 
+.inner-container
+ width: 1250px
+ margin: 0 auto
+
+/*FOOTER*/
+  
+footer
+ padding: 40px 0 0 0
+ background: $color-bluegray
+
+/*WIDTHS*/
+
+.width-small
  max-width: 560px
 
-.container-medium
+.width-medium
  max-width: 800px
 
-.container-large
+.width-large
  max-width: 1200px
 
 /* VISIBILITY */

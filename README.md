@@ -5,38 +5,38 @@ This project is a web application developed using the Angular framework version 
 
 # Project Structure
 
--src/: Contains the source code of the application.
---app/: Main directory of the application.
----components/: Reusable components.
----app-compoent.html/ .sass/ .ts/: Main component
---assets/: Static resources Such as images, styles, etc.
----images/: Images folder
----icons/: Icons folder
----fonts/: Fonts folder
---styles.sass/: Global styles
---_variables.sass/: Main variables styles
+- src/: Contains the source code of the application.
+- - app/: Main directory of the application.
+- - - components/: Reusable components.
+- - - app-compoent.html/ .sass/ .ts/: Main component
+- - assets/: Static resources Such as images, styles, etc.
+- - - images/: Images folder
+- - - icons/: Icons folder
+- - - fonts/: Fonts folder
+- - styles.sass/: Global styles
+- - _variables.sass/: Main variables styles
 
 # Main Components
 
-## footer
+### footer
 - Footer page
 
-## hero
+### hero
 - Hero page
 
-## navbar
+### navbar
 - Navigation to the page
 
-## offcanvas
+### offcanvas
 - Mobile Menu
 
-## offers
+### offers
 - Grid offers page
 
-## promo-banner
+### promo-banner
 - Promo banner
 
-## app
+### app
 - Main componnent
 
 # Environment Setup
